@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Page with JavaScript</h1>
+            <p>This page demonstrates various interactive elements using JavaScript.</p>
+        </header>
+        
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn">🌙 Dark Mode</button>
+        </div>
+        
+        <!-- Part 1: Event Handling -->
+        <section id="event-handling">
+            <h2>Event Handling Examples</h2>
+            
+            <div class="interactive-elements">
+                <div class="element-card">
+                    <h3>Click Event</h3>
+                    <p>Click the button to see a message:</p>
+                    <button id="click-btn">Click Me!</button>
+                    <p id="click-message"></p>
+                </div>
+                
+                <div class="element-card">
+                    <h3>Mouse Events</h3>
+                    <p>Hover over the box below:</p>
+                    <div class="hover-effect" id="hover-box">
+                        Hover over me!
+                    </div>
+                </div>
+                
+                <div class="element-card">
+                    <h3>Keyboard Event</h3>
+                    <p>Type in the input field:</p>
+                    <input type="text" id="keyboard-input" placeholder="Start typing...">
+                    <p>You typed: <span id="keyboard-output"></span></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Part 2: Interactive Elements -->
+        <section id="interactive-elements">
+            <h2>Interactive Elements</h2>
+            
+            <div class="interactive-elements">
+                <!-- Counter Game -->
+                <div class="element-card">
+                    <h3>Counter Game</h3>
+                    <p>How many times can you click?</p>
+                    <div class="counter">
+                        <button id="decrement-btn">-</button>
+                        <div class="counter-value" id="counter-value">0</div>
+                        <button id="increment-btn">+</button>
+                    </div>
+                    <button id="reset-counter">Reset</button>
+                </div>
+                
+                <!-- FAQ Section -->
+                <div class="element-card">
+                    <h3>FAQ Section</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is JavaScript? <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What are events in JavaScript? <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Events are actions or occurrences that happen in the system you are programming, which the system tells you about so you can respond to them in some way if desired.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is DOM manipulation? <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            DOM manipulation is interacting with the Document Object Model (DOM) API to change the document structure, style, or content in response to events.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Part 3: Form Validation -->
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            <p>Please fill out the form below. All fields are required.</p>
+            
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error" id="name-error">Please enter a valid name (min 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password">
+                    <div class="error" id="password-error">Password must be at least 8 characters with 1 number and 1 special character</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password">
+                    <div class="error" id="confirm-password-error">Passwords do not match</div>
+                </div>
+                
+                <button type="submit">Submit Form</button>
+                
+                <div class="success" id="form-success">
+                    Form submitted successfully!
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
